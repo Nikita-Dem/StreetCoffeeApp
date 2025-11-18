@@ -1,18 +1,17 @@
 /* Основные стили */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 76px; /* Для фиксированной навигации */
+    padding-top: 76px;
 }
 
 .hero-section {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('../images/coffee-bg.jpg') center/cover no-repeat;
+                url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-/* Стили для карточек меню */
 .menu-card {
     transition: transform 0.3s ease;
     margin-bottom: 20px;
@@ -33,7 +32,6 @@ body {
     font-size: 1.2em;
 }
 
-/* Стили для навигации */
 .navbar-brand {
     font-weight: bold;
 }
@@ -42,12 +40,10 @@ body {
     font-weight: 500;
 }
 
-/* Стили для секций */
 section {
     padding: 80px 0;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     .hero-section h1 {
         font-size: 2.5rem;
@@ -58,7 +54,6 @@ section {
     }
 }
 
-/* Стили для формы */
 .form-control:focus {
     border-color: #8B4513;
     box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
@@ -72,4 +67,12 @@ section {
 .btn-primary:hover {
     background-color: #654321;
     border-color: #654321;
+}
+
+/* Стили для уведомлений */
+.alert.position-fixed {
+    top: 100px;
+    right: 20px;
+    z-index: 1050;
+    min-width: 300px;
 }
